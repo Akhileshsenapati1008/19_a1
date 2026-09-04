@@ -1,0 +1,56 @@
+{
+  "workflow3_geo_near": {
+    "explainVersion": "1",
+    "executionStats": {
+      "executionSuccess": true,
+      "nReturned": 7161,
+      "executionTimeMillis": 72,
+      "totalKeysExamined": 12581,
+      "totalDocsExamined": 21494
+    },
+    "winningPlan": [
+      {
+        "stage": "FETCH"
+      },
+      {
+        "stage": "GEO_NEAR_2DSPHERE",
+        "indexName": "location_2dsphere",
+        "keyPattern": {
+          "location": "2dsphere"
+        }
+      },
+      {
+        "stage": "IXSCAN",
+        "indexName": "location_2dsphere",
+        "keyPattern": {
+          "location": "2dsphere"
+        }
+      }
+    ]
+  },
+  "workflow4_facet": {
+    "explainVersion": "1",
+    "executionStats": {
+      "executionSuccess": true,
+      "nReturned": 3,
+      "executionTimeMillis": 0,
+      "totalKeysExamined": 3,
+      "totalDocsExamined": 3
+    },
+    "winningPlan": [
+      {
+        "stage": "PROJECTION_SIMPLE"
+      },
+      {
+        "stage": "FETCH"
+      },
+      {
+        "stage": "IXSCAN",
+        "indexName": "rating_1",
+        "keyPattern": {
+          "rating": 1
+        }
+      }
+    ]
+  }
+}
