@@ -1,5 +1,6 @@
 # GigTask — Complete Setup, Run & Verification Guide
-
+[https://github.com/Akhileshsenapati1008/19_a1](https://github.com/Akhileshsenapati1008/19_a1)
+final hash commit 0b8cdc28d14f3d9b12b6f1421ab9ec1038b7c316
 This README is the **step-by-step evaluator guide** for the GigTask database assignment.
 
 A person who clones this GitHub repository should be able to:
